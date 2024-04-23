@@ -1,5 +1,6 @@
 package com.example.guidedlab
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -38,8 +39,10 @@ class MainActivity : AppCompatActivity() {
                     txtPassword.requestFocus()
                 }
 
-                else ->
+                else -> {
                     Toast.makeText(applicationContext, "Welcome", Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this@MainActivity, MainClassList::class.java))
+                }
             }
         }
     }
