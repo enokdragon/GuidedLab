@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val txtLogin = findViewById<TextView>(R.id.loginView)
-        val txtPassword = findViewById<TextView>(R.id.passwordView)
+        val txtLogin = findViewById<TextView>(R.id.usernameEditView)
+        val txtPassword = findViewById<TextView>(R.id.passwordEditView)
         val loginButton = findViewById<Button>(R.id.loginButton)
 
         loginButton.setOnClickListener{
